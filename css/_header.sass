@@ -1,0 +1,27 @@
+header
+
+  width: 100%
+  height: 100px
+  color: $white
+  background: $lightgrey
+  .container
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+
+    h1.logo
+      font-weight: 600
+      font-size: 30px
+      color: $blue
+    nav
+      text-transform: uppercase
+      a
+        font-family: $alt-font-family
+        font-size: 18px
+        color: $dark
+        margin-left: 26px
+        &:first-child
+          margin-left: 0
+        &.current
+          text-decoration: underline

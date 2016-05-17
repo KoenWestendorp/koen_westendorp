@@ -1,0 +1,12 @@
+title: barebones
+tagline: "This is a barebones template"
+url: "http://yourwebsite.com"
+
+sass:
+    sass_dir: css
+
+exclude: [.scss, .sass, README.md, node_modules, gruntfile.js, package.json]
+
+permalinks: /:year/:month/:day/:title
+
+url: "http://192.168.2.5:3000"

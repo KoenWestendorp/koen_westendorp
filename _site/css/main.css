@@ -1,0 +1,185 @@
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,700);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
+.gigantic, h1, h2, h3, h4, h5, h6 {
+  color: #4a4a4a;
+  font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", sans-serif; }
+
+.gigantic {
+  font-size: 3em; }
+
+h1 {
+  font-size: 2em;
+  color: #446383; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.17em; }
+
+h4 {
+  font-size: 1em; }
+
+small {
+  font-size: smaller; }
+
+p {
+  margin: 0 0 20px 0;
+  font-size: 1em;
+  font-family: "Lora", serif; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+a {
+  color: #3b99fc;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+hr {
+  border: solid #d8d8d8;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0; }
+
+.no-underline {
+  text-decoration: none; }
+  .no-underline:hover {
+    text-decoration: none; }
+
+.fade:hover {
+  animation: fade 250ms cubic-bezier(0, 0, 0.72, 0.02);
+  opacity: 0.7; }
+
+@keyframes fade {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0.7; } }
+.button {
+  padding: 18px 0;
+  width: 196px;
+  border: 2px solid #3b99fc;
+  border-radius: 3px;
+  font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3b99fc;
+  transition: all 100ms cubic-bezier(0, 0, 0.72, 0.02);
+  text-decoration: none; }
+  .button:hover {
+    background: #3b99fc;
+    color: #ffffff;
+    transition: all 100ms cubic-bezier(0, 0, 0.72, 0.02);
+    text-decoration: none; }
+
+.b-large {
+  width: 328px; }
+
+header {
+  width: 100%;
+  height: 100px;
+  color: #ffffff;
+  background: #fafafa; }
+  header .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    header .container h1.logo {
+      font-weight: 600;
+      font-size: 30px;
+      color: #3b99fc; }
+    header .container nav {
+      text-transform: uppercase; }
+      header .container nav a {
+        font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 18px;
+        color: #446383;
+        margin-left: 26px; }
+        header .container nav a:first-child {
+          margin-left: 0; }
+        header .container nav a.current {
+          text-decoration: underline; }
+
+footer {
+  width: 100%;
+  color: #ffffff;
+  background: #446383; }
+
+section#posts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  section#posts div#post {
+    width: 100%;
+    margin-top: 45px; }
+    section#posts div#post div.image {
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      align-items: baseline; }
+    section#posts div#post div.info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      section#posts div#post div.info .date, section#posts div#post div.info .learnmore {
+        font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 18px;
+        font-weight: 600; }
+      section#posts div#post div.info .date {
+        font-style: italic;
+        color: #d8d8d8; }
+      section#posts div#post div.info .learnmore {
+        text-transform: uppercase; }
+  section#posts .button {
+    margin-top: 40px; }
+
+section#portfolio {
+  width: 100%;
+  height: 480px;
+  background: #fafafa;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around; }
+
+/*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ** */
+html {
+  background-color: #ffffff;
+  height: 2000px; }
+
+body {
+  font-family: "Lora", serif;
+  color: #4a4a4a;
+  -webkit-font-smoothing: antialiased; }
+
+.cf:before, .cf:after {
+  content: "";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+header, footer, main {
+  display: flex;
+  justify-content: space-around; }
+
+main {
+  flex-wrap: wrap; }
+
+.container {
+  max-width: 720px;
+  width: 90%;
+  display: flex; }
+
+.center {
+  align-self: center; }

@@ -1,0 +1,57 @@
+---
+---
+
+@import "_vars.sass"
+@import "_type.sass"
+@import "_animations.sass"
+@import "_buttons.sass"
+
+@import "_header.sass"
+@import "_footer.sass"
+
+@import "_home.sass"
+@import "_404.sass"
+// @import "_about.sass"
+// @import "_contact.sass"
+
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css)
+// @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css)
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,700)
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic)
+
+
+
+/*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***/
+
+html
+  background-color: $white
+  height: 2000px
+
+body
+  font-family: $regular-font-family
+  color: $black
+  -webkit-font-smoothing: antialiased
+
+.cf:before, .cf:after
+  content: ""
+  display: table
+
+.cf:after
+  clear: both
+
+
+header, footer, main
+  display: flex
+  justify-content: space-around
+
+main
+  flex-wrap: wrap
+
+.container
+  max-width: 720px
+  width: 90%
+  display: flex
+
+.center
+  align-self: center
