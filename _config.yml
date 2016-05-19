@@ -2,14 +2,18 @@
 title: "Koen Westendorp"
 tagline: "This is a barebones template"
 
-# Files
+about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi numquam id fuga suscipit perspiciatis facere vero nihil distinctio voluptates deleniti, libero sequi explicabo iusto laudantium enim adipisci, tempore alias eum?"
+
+# Settings
 sass:
     sass_dir: css
 exclude: [.sass, README.md]
+highlighter: pygments
 
 # Linking
 permalinks: /:year/:month/:day/:title
 ####url: "http://yourwebsite.com"
+
 
 # Social
 twitter: "Koen__W"

@@ -53,6 +53,12 @@ hr {
   .no-underline:hover {
     text-decoration: none; }
 
+div.highlighter-rouge .highlight {
+  background: #fafafa;
+  color: #4a4a4a;
+  padding: 10px;
+  width: 100%; }
+
 .fade {
   opacity: 1;
   transition: opacity 200ms ease-in-out; }
@@ -95,6 +101,234 @@ hr {
 
 .b-large {
   width: 328px; }
+
+.highlight .hll {
+  background-color: #404040; }
+
+.highlight .c {
+  color: #999999;
+  font-style: italic; }
+
+.highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2; }
+
+.highlight .g {
+  color: #d0d0d0; }
+
+.highlight .k {
+  color: #6ab825;
+  font-weight: bold; }
+
+.highlight .l {
+  color: #d0d0d0; }
+
+.highlight .n {
+  color: #d0d0d0; }
+
+.highlight .o {
+  color: #d0d0d0; }
+
+.highlight .x {
+  color: #d0d0d0; }
+
+.highlight .p {
+  color: #d0d0d0; }
+
+.highlight .cm {
+  color: #999999;
+  font-style: italic; }
+
+.highlight .cp {
+  color: #cd2828;
+  font-weight: bold; }
+
+.highlight .c {
+  color: #999999;
+  font-style: italic; }
+
+.highlight .c s {
+  color: #e50808;
+  font-weight: bold;
+  background-color: #520000; }
+
+.highlight .gd {
+  color: #d22323; }
+
+.highlight .ge {
+  color: #d0d0d0;
+  font-style: italic; }
+
+.highlight .gr {
+  color: #d22323; }
+
+.highlight .gh {
+  color: #ffffff;
+  font-weight: bold; }
+
+.highlight .gi {
+  color: #589819; }
+
+.highlight .g o {
+  color: #cccccc; }
+
+.highlight .gp {
+  color: #3b99fc; }
+
+.highlight .gs {
+  color: #d0d0d0;
+  font-weight: bold; }
+
+.highlight .gu {
+  color: #ffffff;
+  text-decoration: underline; }
+
+.highlight .gt {
+  color: #d22323; }
+
+.highlight .kc {
+  color: #6ab825;
+  font-weight: bold; }
+
+.highlight .kd {
+  color: #6ab825;
+  font-weight: bold; }
+
+.highlight .kn {
+  color: #6ab825;
+  font-weight: bold; }
+
+.highlight .kp {
+  color: #6ab825; }
+
+.highlight .kr {
+  color: #6ab825;
+  font-weight: bold; }
+
+.highlight .kt {
+  color: #6ab825;
+  font-weight: bold; }
+
+.highlight .ld {
+  color: #d0d0d0; }
+
+.highlight .m {
+  color: #3677a9; }
+
+.highlight .s {
+  color: #ed9d13; }
+
+.highlight .na {
+  color: #bbbbbb; }
+
+.highlight .nb {
+  color: #24909d; }
+
+.highlight .nc {
+  color: #447fcf;
+  text-decoration: underline; }
+
+.highlight .no {
+  color: #40ffff; }
+
+.highlight .nd {
+  color: #ffa500; }
+
+.highlight .ni {
+  color: #d0d0d0; }
+
+.highlight .ne {
+  color: #bbbbbb; }
+
+.highlight .nf {
+  color: #447fcf; }
+
+.highlight .nl {
+  color: #d0d0d0; }
+
+.highlight .nn {
+  color: #447fcf;
+  text-decoration: underline; }
+
+.highlight .nx {
+  color: #d0d0d0; }
+
+.highlight .py {
+  color: #d0d0d0; }
+
+.highlight .nt {
+  color: #6ab825;
+  font-weight: bold; }
+
+.highlight .nv {
+  color: #40ffff; }
+
+.highlight .ow {
+  color: #6ab825;
+  font-weight: bold; }
+
+.highlight .w {
+  color: #666666; }
+
+.highlight .mf {
+  color: #3677a9; }
+
+.highlight .mh {
+  color: #3677a9; }
+
+.highlight .mi {
+  color: #3677a9; }
+
+.highlight .mo {
+  color: #3677a9; }
+
+.highlight .sb {
+  color: #ed9d13; }
+
+.highlight .sc {
+  color: #ed9d13; }
+
+.highlight .sd {
+  color: #ed9d13; }
+
+.highlight .s {
+  color: #ed9d13; }
+
+.highlight .se {
+  color: #ed9d13; }
+
+.highlight .sh {
+  color: #ed9d13; }
+
+.highlight .si {
+  color: #ed9d13; }
+
+.highlight .sx {
+  color: #ffa500; }
+
+.highlight .sr {
+  color: #ed9d13; }
+
+.highlight .s {
+  color: #ed9d13; }
+
+.highlight .ss {
+  color: #ed9d13; }
+
+.highlight .bp {
+  color: #24909d; }
+
+.highlight .vc {
+  color: #40ffff; }
+
+.highlight .vg {
+  color: #40ffff; }
+
+.highlight .vi {
+  color: #40ffff; }
+
+.highlight .il {
+  color: #3677a9; }
 
 header {
   width: 100%;
@@ -270,6 +504,17 @@ section#about {
     section#about div.container .text p {
       font-size: 20px; }
 
+section#post {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  section#post .cover-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px; }
+
 /*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ** */
 html {
   background-color: #ffffff; }
@@ -278,7 +523,7 @@ body {
   font-family: "Lora", serif;
   color: #4a4a4a;
   background-color: #4a4a4a;
-  -webkit-font-smoothing: antialias; }
+  -webkit-transform: translateZ(0); }
 
 .cf:before, .cf:after {
   content: "";
