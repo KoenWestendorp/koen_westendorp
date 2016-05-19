@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <!-- <meta http-equiv="refresh" content="5"> -->
-  <title>{{ page.tabtitle }} | {{ site.title }}</title>
+  <title>{{ page.title | capitalize }} | {{ site.title }}</title>
   {% if page.url == "/404.html" %}
     <meta http-equiv="refresh" content="10; url=/">
   {% endif %}

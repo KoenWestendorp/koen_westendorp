@@ -1,12 +1,18 @@
-title: barebones
+# Titles and information
+title: "Koen Westendorp"
 tagline: "This is a barebones template"
-url: "http://yourwebsite.com"
 
+# Files
 sass:
     sass_dir: css
+exclude: [.sass, README.md]
 
-exclude: [.scss, .sass, README.md, node_modules, gruntfile.js, package.json]
-
+# Linking
 permalinks: /:year/:month/:day/:title
+####url: "http://yourwebsite.com"
 
-url: "http://192.168.2.5:3000"
+# Social
+twitter: "Koen__W"
+github: "KoenWestendorp"
+youtube: "UCFu7dWFlfRxkTX1kpBSpNAg"
+dribbble: "KoenWestendorp"
