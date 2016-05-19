@@ -254,7 +254,7 @@ body {
   font-family: "Lora", serif;
   color: #4a4a4a;
   background-color: #4a4a4a;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialias; }
 
 .cf:before, .cf:after {
   content: "";

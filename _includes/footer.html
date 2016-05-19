@@ -10,10 +10,10 @@
     </div>
     <div class="nav">
       <ul>
-        <li> <a href="" class="current">Home</a></li>
-        <li> <a href="">About me</a></li>
-        <li> <a href="">Portfolio</a></li>
-        <li> <a href="">Blog</a></li>
+        <li> <a href="/" class="{% if page.title == 'home' %}current{% endif %}">Home</a></li>
+        <li> <a href="/about" class="{% if page.title == 'about' %}current{% endif %}">About me</a></li>
+        <li> <a href="/portfolio" class="{% if page.title == 'portfolio' %}current{% endif %}">Portfolio</a></li>
+        <li> <a href="/blog" class="{% if page.title == 'blog' %}current{% endif %}">Blog</a></li>
       </ul>
     </div>
   </div>
