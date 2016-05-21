@@ -1,0 +1,50 @@
+section#portfolioposts
+  height: 480px
+  background: $lightgrey
+  margin-top: 60px
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: center
+  display: flex
+  justify-content: space-between
+  margin-bottom: 75px
+  //overflow: hidden
+  .box
+    height: 196px
+    width: 196px
+    //overflow: hidden
+    &:hover .info
+      opacity: 1
+
+    a
+      text-decoration: none
+
+    .image
+      background-size: cover
+      background-position: center
+      height: 100%
+      width: 100%
+
+    .info
+      position: relative
+      top: -196px
+      height: 100%
+      width: 100%
+      background-color: transparentize($blue, 0.4)
+      opacity: 0
+      transition: all 250ms ease-in-out
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      .text
+        padding: 30px
+        p.date, p.title
+          font-family: $alt-font-family
+        .date
+          font-size: 15px
+          color: transparentize($white, 0.2)
+        .title
+          font-size: 2em
+          color: $white
+          text-decoration: underline

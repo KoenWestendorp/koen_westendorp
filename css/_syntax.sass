@@ -157,3 +157,16 @@
   color: #40ffff /* Name.Variable.Instanc  e */
 .highlight .il
   color: #3677a9 /* Literal.Number.Integer.Long */
+
+pre
+  background-color: $black
+  width: 100%
+  padding: 10px
+
+code.language-bash
+  &::before
+    content: "$ "
+    color: $blue
+    font-weight: 600
+
+  color: $lightgrey

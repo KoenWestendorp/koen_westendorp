@@ -26,12 +26,35 @@ footer
 
   .social
     text-align: left
+    i.fa
+      display: relative
+      opacity: 0
+      left: 20px
+      transition: all 200ms ease-in-out
+      padding-left: -16px
+
+    a:hover > i.fa
+      opacity: 1
+      left: 0
+      padding-left: 5px
+
+    i.fa-twitter
+      color: #55acee
+    i.fa-github
+      color: #fdfdfd
+    i.fa-youtube-play
+      color: #ce203f
+    i.fa-dribbble
+      color: #ea4c89
+
 
   .nav
     text-align: right
+
     .current
       font-weight: 600
 
   .copyright
     text-align: center
+    font-size: 16px
     margin-bottom: 15px

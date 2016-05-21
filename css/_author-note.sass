@@ -1,0 +1,35 @@
+div.author-note
+  margin-top: 2.5em
+  margin-bottom: 2.5em
+  text-align: center
+  p.author, p.date
+    font-family: $alt-font-family
+  p.author
+    font-style: italic
+    opacity: 0.8
+    margin-bottom: 1em
+    font-weight: 600
+    i.fa-heart
+      color: $red
+      &:hover
+        animation: pulse 1200ms ease-out
+        animation-iteration-count: infinite
+    a
+      &:hover
+        text-decoration: none
+        color: $blue
+      i.fa-twitter
+        display: relative
+        color: $blue
+        opacity: 0
+        left: 20px
+        transition: all 200ms ease-in-out
+        padding-left: -16px
+
+    a:hover > i.fa-twitter
+      opacity: 1
+      left: 0
+      padding-left: 5px
+      animation: pop 500ms ease-out
+  p.date
+    opacity: 0.5

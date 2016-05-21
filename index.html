@@ -6,16 +6,8 @@ excerpt: This is the homepage of this website
 ---
 
 <section id="posts" class="container">
-  {% for post in site.posts limit:2%}
-    <div id="post">
-      <a href="{{ post.url }}"><div class="image" style="background-image: url({{ post.cover-image }})"></div></a>
-      <h1 class="title">{{ post.title }}</h1>
-      <p class="content-preview">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-      <div class="info">
-        <p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
-        <a class="learnmore fade no-underline" href="{{ post.url }}">Learn more...</a>
-      </div>
-    </div>
+  {% for post in site.posts limit:2 %}
+    {% include post-block.html %}
   {% endfor %}
   <a href="/blog" class="button b-large center">More blog posts</a>
 </section>

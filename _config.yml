@@ -4,11 +4,13 @@ tagline: "This is a barebones template"
 
 about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi numquam id fuga suscipit perspiciatis facere vero nihil distinctio voluptates deleniti, libero sequi explicabo iusto laudantium enim adipisci, tempore alias eum?"
 
+name: "Koen Westendorp" ## MY NAME
+
 # Settings
 sass:
     sass_dir: css
 exclude: [.sass, README.md]
-highlighter: pygments
+markdown: kramdown
 
 # Linking
 permalinks: /:year/:month/:day/:title

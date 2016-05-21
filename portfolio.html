@@ -4,3 +4,19 @@ title: portfolio
 fulltitle: personal portfoliopage
 excerpt: This is the portfoliopage of this website
 ---
+
+<section id="portfolioposts">
+  {% for item in site.posts %}
+    {% if item.layout == portfolio %}
+      <div class="box"><a href="{{ item.url }}">
+        <div class="image" style="background-image: url({{ item.cover-image }});"></div>
+        <div class="info">
+          <div class="text">
+            <p class="date">{{ post.date | date: '%b %d, %y' }}</p>
+            <p class="title">{{ post.title }}</p>
+          </div>
+        </div>
+      </a></div>
+    {% endif %}
+  {% endfor %}
+</section>

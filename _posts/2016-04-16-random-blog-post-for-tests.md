@@ -1,7 +1,7 @@
 ---
 layout: post
-title: My Personal Guide to Git
-cover-image: /img/blog/image3.jpg
+title: Random Test Post
+cover-image: /img/blog/image1.jpg
 ---
 
 This is my Personal Guide to Git (or PGG for short).
