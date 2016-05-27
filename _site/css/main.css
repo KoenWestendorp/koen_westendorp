@@ -398,7 +398,8 @@ header {
         font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", sans-serif;
         font-size: 18px;
         color: #446383;
-        margin-left: 26px; }
+        margin-left: 26px;
+        text-decoration: none; }
         header .container nav a:first-child {
           margin-left: 0; }
         header .container nav a.current {
