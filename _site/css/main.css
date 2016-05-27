@@ -396,6 +396,7 @@ header {
       text-transform: uppercase; }
       header .container nav a {
         font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: normal;
         font-size: 18px;
         color: #446383;
         margin-left: 26px;
@@ -689,7 +690,7 @@ body {
   font-family: "Lora", serif;
   color: #4a4a4a;
   background-color: #4a4a4a;
-  -webkit-font-smoothing: antialias;
+  -webkit-font-smoothing: antialiased;
   -webkit-transform: translateZ(0); }
 
 .cf:before, .cf:after {
