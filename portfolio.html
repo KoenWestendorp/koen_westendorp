@@ -5,15 +5,15 @@ fulltitle: personal portfoliopage
 excerpt: This is the portfoliopage of this website
 ---
 
-<section id="portfolioposts">
+<section id="portfolioposts" class="container">
   {% for item in site.posts %}
     {% if item.layout == "portfolio" %}
       <div class="box"><a href="{{ item.url }}">
         <div class="image" style="background-image: url({{ item.cover-image }});"></div>
         <div class="info">
           <div class="text">
-            <p class="date">{{ post.date | date: '%b %d, %y' }}</p>
-            <p class="title">{{ post.title }}</p>
+            <p class="date">{{ item.date | date: '%b %d, %y' }}</p>
+            <p class="title">{{ item.title }}</p>
           </div>
         </div>
       </a></div>
