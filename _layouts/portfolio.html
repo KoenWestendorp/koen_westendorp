@@ -4,7 +4,13 @@
   <body>
     {% include header.html %}
     <main>
-      {{ content }}
+      <section id="portfolio-post" class="container">
+        <div class="cover-image" style="background-image: url({{ page.cover-image }});"></div>
+        <div class="content">
+          {{ content }}
+        </div>
+        {% include author-note.html %}
+      </section>
     </main>
     {% include footer.html %}
   </body>

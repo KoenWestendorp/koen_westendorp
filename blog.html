@@ -6,7 +6,7 @@ excerpt: This is the blog of this website
 ---
 
 <section id="posts" class="container">
-  {% for post in site.posts limit:7 %}
+  {% for post in site.posts %}
     {% unless post.layout == "portfolio" %}
       {% include post-block.html %}
     {% endunless %}
