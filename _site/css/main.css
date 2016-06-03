@@ -369,9 +369,7 @@ code {
 pre {
   background-color: #4a4a4a;
   width: 100%;
-  padding: 10px; }
-
-code {
+  padding: 10px;
   color: #fafafa; }
 
 code.language-bash {

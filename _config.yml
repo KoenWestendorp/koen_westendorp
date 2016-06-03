@@ -1,6 +1,6 @@
 # Titles and information
 title: "Koen Westendorp"
-tagline: "This is a barebones template"
+tagline: "This is my personal website"
 
 about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi numquam id fuga suscipit perspiciatis facere vero nihil distinctio voluptates deleniti, libero sequi explicabo iusto laudantium enim adipisci, tempore alias eum?"
 
@@ -10,7 +10,24 @@ name: "Koen Westendorp" ## MY NAME
 sass:
     sass_dir: css
 exclude: [.sass, README.md]
-markdown: kramdown
+markdown: redcarpet
+highlighter: rouge
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style
 
 # Linking
 permalinks: /:year/:month/:day/:title

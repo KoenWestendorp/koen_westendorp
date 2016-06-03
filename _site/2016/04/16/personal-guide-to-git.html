@@ -26,85 +26,66 @@
       <section id="post" class="container">
         <div class="cover-image" style="background-image: url(/img/blog/image3.jpg);"></div>
         <div class="content">
-          <p>This is my Personal Guide to Git (or PGG for short).
-## Basic commands
-First you want to check in on the <em>git status</em> of your project.</p>
+          <p>This is my Personal Guide to Git (or PGG for short).</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>git status
-</code></pre>
-</div>
+<h2>Basic commands</h2>
 
-<h2 id="setting-up">Setting up</h2>
+<p>First you want to check in on the <em>git status</em> of your project.</p>
+
+<p><code>bash
+git status
+</code>`</p>
+
+<h2>Setting up</h2>
+
 <p>The first thing to do when setting up git is initializing git.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>git init
-</code></pre>
-</div>
+<p><code>bash
+git init
+</code>`</p>
 
 <p><em>…thats it!</em></p>
 
 <p>Then its smart to check the status of your project.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>git status
-</code></pre>
-</div>
+<p><code>bash
+git status
+</code>`</p>
 
 <p>You most likely want to publish your stuff on <a href="https://github.com">GitHub</a>. To make that magic happen you need to set a <em>remote name</em> and <em>repository url</em>. You will most of the time call it <em>origin</em>.</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git remote add origin https://github.com/KoenWestendorp/some-repo-name.git
+</code></pre></div>
+<h2>Adding, committing and pushing</h2>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>git remote add origin https://github.com/KoenWestendorp/some-repo-name.git
-</code></pre>
-</div>
-
-<h2 id="adding-committing-and-pushing">Adding, committing and pushing</h2>
 <p>Off course you want to make the changes you make to your project to become part of the timeline of the <a href="#branches">branch</a> you’re on. First you need to <em>add</em> the changes.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>git add .
-</code></pre>
-</div>
-
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git add .
+</code></pre></div>
 <p><em>The dot basically means “everything that changed”. You can also make it to add certain files, filetypes or folders.</em></p>
 
 <p>To <em>commit</em> the things you <em>added</em> onto a branch you can use this command:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>git commit -m <span class="s2">"Added 🍋🍊 and 🍦🍨🍰"</span>
-</code></pre>
-</div>
-
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git commit -m <span class="s2">"Added 🍋🍊 and 🍦🍨🍰"</span>
+</code></pre></div>
 <p>To <em>add</em> <strong>and</strong> <em>commit</em> at the same time you can use this line of text:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>git commit -a -m <span class="s2">"Added 🐺, 🐦🐧🐔 and 🍫🍭"</span>
-</code></pre>
-</div>
-
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git commit -a -m <span class="s2">"Added 🐺, 🐦🐧🐔 and 🍫🍭"</span>
+</code></pre></div>
 <p>After <em>addin’</em> ’n <em>commitin’</em> you can start <em>pushin’</em>.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>git push origin master
-</code></pre>
-</div>
-
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git push origin master
+</code></pre></div>
 <p><em>Origin being the remote version of your repo and master being the branch you’re on in this situation.</em></p>
 
-<h2 id="logging-and-checking">Logging and checking</h2>
+<h2>Logging and checking</h2>
+
 <p>It is always a good idea to check in on the status of your project every once in a while. You can view the status of git in your project by typing:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>git status
-</code></pre>
-</div>
-
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git status
+</code></pre></div>
 <p>as discussed earlier.
 To see a list of different iterations in your project you can use:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>git log
-</code></pre>
-</div>
-
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git log
+</code></pre></div>
 <p>This show a list of the changes made over time but is pretty messy. Thats the reason I use this command most of the time:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>git log --oneline --graph
-</code></pre>
-</div>
-
-<p><em>Because of the <code class="highlighter-rouge">--oneline</code> option it is just one line instead of 5 (!) and if you’re not working with other people or don’t need to see what day and time it was committed it sure is enough.</em></p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git log --oneline --graph
+</code></pre></div>
+<p><em>Because of the <code>--oneline</code> option it is just one line instead of 5 (!) and if you’re not working with other people or don’t need to see what day and time it was committed it sure is enough.</em></p>
 
         </div>
         <div class="author-note">
