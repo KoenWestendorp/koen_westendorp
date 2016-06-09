@@ -160,16 +160,15 @@
 
 pre
   background-color: $black
-  width: 100%
+  width: calc(100% - 20px)
   padding: 10px
   color: $lightgrey
 
-
-
 code.language-bash
   &::before
+    font-family: $code-font-family
     content: "$ "
     color: $blue
-    font-weight: 600
+    font-weight: 900
 
   color: $lightgrey

@@ -42,6 +42,9 @@ a {
   a:hover {
     text-decoration: underline; }
 
+code, pre, div.highlight {
+  font-family: "Menlo", monospace; }
+
 hr {
   border: solid #d8d8d8;
   border-width: 1px 0 0;
@@ -368,16 +371,17 @@ code {
 
 pre {
   background-color: #4a4a4a;
-  width: 100%;
+  width: calc(100% - 20px);
   padding: 10px;
   color: #fafafa; }
 
 code.language-bash {
   color: #fafafa; }
   code.language-bash::before {
+    font-family: "Menlo", monospace;
     content: "$ ";
     color: #3b99fc;
-    font-weight: 600; }
+    font-weight: 900; }
 
 header {
   width: 100%;
